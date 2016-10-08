@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="loginfo" layoutX="45.0" layoutY="44.0" text="아이디와 비밀번호를 입력하세요.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwd" layoutX="28.0" layoutY="109.0" prefHeight="28.0" prefWidth="180.0" promptText="비밀번호">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <TextField fx:id="userid" layoutX="28.0" layoutY="81.0" prefHeight="28.0" prefWidth="180.0" promptText="아이디">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="loginbtn" layoutX="208.0" layoutY="81.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="64.0" text="로그인" />
+      <Button fx:id="joinbtn" layoutX="23.0" layoutY="149.0" mnemonicParsing="false" text="회원가입" />
+      <Button fx:id="useridbtn" layoutX="95.0" layoutY="149.0" mnemonicParsing="false" text="아이디 찾기" />
+      <Button fx:id="passwdbtn" layoutX="185.0" layoutY="149.0" mnemonicParsing="false" text="비밀번호 찾기" />
+   </children>
+</AnchorPane>

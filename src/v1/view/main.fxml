@@ -22,7 +22,6 @@
                 </Menu>
                 <Menu mnemonicParsing="false" text="강습">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="Delete" />
                         <MenuItem mnemonicParsing="false" text="강의신청" />
                         <MenuItem mnemonicParsing="false" text="강의소개" />
                         <MenuItem mnemonicParsing="false" text="선생님" />
@@ -55,7 +54,7 @@
                            <graphic>
                               <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../img/icon/search.png" />
+                                    <Image url="@../img/icon/search.png" />
                                  </image>
                               </ImageView>
                            </graphic></Button>
@@ -63,7 +62,7 @@
                            <graphic>
                               <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../img/icon/star.png" />
+                                    <Image url="@../img/icon/star.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -72,7 +71,7 @@
                            <graphic>
                               <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../img/icon/pen.png" />
+                                    <Image url="@../img/icon/pen.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -81,7 +80,7 @@
                            <graphic>
                               <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../img/icon/test.png" />
+                                    <Image url="@../img/icon/test.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -90,7 +89,7 @@
                            <graphic>
                               <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../img/icon/member.png" />
+                                    <Image url="@../img/icon/member.png" />
                                  </image>
                               </ImageView>
                            </graphic>
@@ -99,7 +98,7 @@
                            <graphic>
                               <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../img/icon/info.png" />
+                                    <Image url="@../img/icon/info.png" />
                                  </image>
                               </ImageView>
                            </graphic>
