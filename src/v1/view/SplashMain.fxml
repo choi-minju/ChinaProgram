@@ -9,7 +9,7 @@
    <children>
       <ImageView fitHeight="250.0" fitWidth="300.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../img/img/chinese%20img%202.png" />
+            <Image url="@../img/img/chinese img 2.png" />
          </image>
       </ImageView>
       <ProgressBar layoutX="14.0" layoutY="268.0" prefHeight="18.0" prefWidth="271.0" progress="0.0" />

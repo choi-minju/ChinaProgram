@@ -1,20 +1,312 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.control.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" visible="false">
+      <Pane fx:id="join1" prefHeight="200.0" prefWidth="200.0" visible="false">
          <children>
             <Label layoutX="25.0" layoutY="25.0" text="회원가입">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
+            <HBox layoutX="25.0" layoutY="55.0" prefHeight="21.0" prefWidth="272.0">
+               <children>
+                  <Label text="회원약관" textFill="#d9042b">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="&gt;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="회원정보">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="&gt;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="정보확인">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="&gt;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="가입완료">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <TextArea editable="false" layoutX="25.0" layoutY="85.0" prefHeight="240.0" prefWidth="550.0" />
+            <CheckBox fx:id="okcheck" layoutX="367.0" layoutY="335.0" mnemonicParsing="false" text="위 약관에 동의하시겠습니까?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="gojoin2" disable="true" layoutX="505.0" layoutY="360.0" mnemonicParsing="false" text="다음으로">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="join2" prefHeight="200.0" prefWidth="200.0" visible="false">
+         <children>
+            <Label layoutX="25.0" layoutY="25.0" text="회원가입">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <HBox layoutX="25.0" layoutY="55.0" prefHeight="21.0" prefWidth="272.0">
+               <children>
+                  <Label text="회원약관">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="&gt;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="회원정보" textFill="#d9042b">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="&gt;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="정보확인">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="&gt;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="가입완료">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <GridPane layoutX="25.0" layoutY="85.0" prefHeight="258.0" prefWidth="550.0" vgap="3.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="118.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="432.0" minWidth="10.0" prefWidth="432.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="50.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="-Infinity" prefHeight="25.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="아이디">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="비밀번호" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="비밀번호 확인" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="이름" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="성별" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="전화번호" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="생년월일" GridPane.rowIndex="6">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="주소" GridPane.rowIndex="7">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label text="이메일" GridPane.rowIndex="8">
+                     <GridPane.margin>
+                        <Insets right="10.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1">
+                     <children>
+                        <TextField fx:id="uid" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="150.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="uidbtn" mnemonicParsing="false" text="중복체크">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <children>
+                        <PasswordField fx:id="pwd" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="150.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </PasswordField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <children>
+                        <PasswordField fx:id="pwd2" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="150.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </PasswordField>
+                        <Label fx:id="pwdif" prefHeight="15.0" prefWidth="242.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="15.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <children>
+                        <CheckBox fx:id="wo" mnemonicParsing="false" text="여성">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="ma" mnemonicParsing="false" text="남성">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </CheckBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <children>
+                        <ComboBox fx:id="year" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="90.0" promptText="년도선택" />
+                        <ComboBox fx:id="mon" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="90.0" promptText="월선택" />
+                        <ComboBox fx:id="day" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="90.0" promptText="일선택" />
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                           <children>
+                              <TextField fx:id="addr1" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Label text="-">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="addr2" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="addrbtn" mnemonicParsing="false" text="주소 찾기">
+                                 <font>
+                                    <Font size="13.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                           <children>
+                              <TextField fx:id="addr3" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="addr4" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <children>
+                        <TextField fx:id="email" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="150.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label text="\@">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox fx:id="www" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="110.0" promptText="도메인 선택" />
+                     </children>
+                  </HBox>
+                  <TextField fx:id="name" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tel" maxWidth="-Infinity" minWidth="-Infinity" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </GridPane>
+            <Button fx:id="gojoin3" layoutX="511.0" layoutY="363.0" mnemonicParsing="false" text="다음으로" />
+            <Button fx:id="backjoin1" layoutX="436.0" layoutY="363.0" mnemonicParsing="false" text="이전으로" />
+         </children>
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
             <HBox layoutX="25.0" layoutY="55.0" prefHeight="21.0" prefWidth="272.0">
                <children>
                   <Label text="회원약관">
@@ -54,57 +346,14 @@
                   </Label>
                </children>
             </HBox>
-         </children>
-      </AnchorPane>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" visible="false">
-         <children>
             <Label layoutX="25.0" layoutY="25.0" text="회원가입">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <HBox layoutX="25.0" layoutY="55.0" prefHeight="21.0" prefWidth="272.0">
-               <children>
-                  <Label text="회원약관">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="&gt;">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="회원정보">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="&gt;">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="정보확인">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="&gt;">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="가입완료">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-               </children>
-            </HBox>
          </children>
-      </AnchorPane>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+      </Pane>
+      <Pane prefHeight="200.0" prefWidth="200.0" visible="false">
          <children>
             <HBox layoutX="25.0" layoutY="55.0" prefHeight="21.0" prefWidth="272.0">
                <children>
@@ -151,54 +400,6 @@
                </font>
             </Label>
          </children>
-      </AnchorPane>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" visible="false">
-         <children>
-            <HBox prefHeight="21.0" prefWidth="272.0">
-               <children>
-                  <Label text="회원약관">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="&gt;">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="회원정보">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="&gt;">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="정보확인">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="&gt;">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-                  <Label text="가입완료">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
-               </children>
-            </HBox>
-            <Label text="회원가입">
-               <font>
-                  <Font name="System Bold" size="18.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
+      </Pane>
    </children>
 </StackPane>
